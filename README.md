@@ -16,8 +16,13 @@ I implemented this project based on the document you sent. The project has 2 ent
 #keycloak
 
 Also, to implement authentication and authorization, use keycloak and how to set it up is as follows:
+
 1- download keycloak 
+
 2-go to bin folder in keycloak:
+
 in cmd  type :
+
 kc.bat start-dev
+
 and test it in postman with admin and user roles.

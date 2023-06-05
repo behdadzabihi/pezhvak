@@ -1,0 +1,24 @@
+server:
+  port: 9595
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pezhvak_project_db
+    username: postgres
+    password: behdad2012
+
+
+  jpa:
+    database-platform: org.hibernate.spatial.dialect.postgis.PostgisDialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+---
+keycloak:
+  realm: pezhvakrealm
+  auth-server-url: http://localhost:8080
+  resource: pezhvakclient
+  public-client: true
+  bearer-only: true
